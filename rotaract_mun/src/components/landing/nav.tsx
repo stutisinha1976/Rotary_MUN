@@ -4,44 +4,47 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from "next/router";
 
-
-
-
-
 const Nav = () => {
-
-
-
   return (
-    <div className=''>
-    <nav className='flex  bg-[#B1F0F7]  justify-between px-6 '>
-      <div>
-        <Image
-        className=""
-        src="/logo.png"
-        alt="Next.js logo"
-        width={100}
-        height={100}
-        />
-      </div>
+    <div>
+      <nav className='flex justify-between px-6 bg-[#000B58]'>
+        <div>
+          <Image
+            src="/og_logo.png"
+            alt="Next.js logo"
+            width={100}
+            height={100}
+          />
+        </div>
 
-      <div className='flex gap-14 font-serif text-2xl font-medium text-[#81BFDA] items-center mr-16 sm:display-none lg:gap-8 lg:text-lg lg:mr-0 sm:text-sm'>
-        <Link href="/" className=" ">Home</Link>
-        <Link href="/#about" className=" ">About Us</Link>
-        <Link href="/#guidelines" className=" ">Register</Link>
-        <Link href="/#working" className=" ">About Rotaract</Link>
-        <Link href="/#faq" className=" ">Our Team</Link>
-        <Link href="/#faq" className=" ">Sponsors</Link>
-       
+        <div className='flex gap-10 font-serif text-xl font-medium text-[#FFF4B7] items-center mr-16'>
+          <Link href="/" className="hidden lg:block">Home</Link>
+          <Link href="/#guidelines" className="hidden lg:block">Register</Link>
+          <Link href="/#working" className="hidden lg:block">About Rotary</Link>
+          <Link href="/#faq" className="hidden lg:block">Our Team</Link>
+          <Link href="/#faq" className="hidden lg:block">Sponsors</Link>
+
+          {/* Mobile Hamburger Menu */}
+          <div className="lg:hidden flex items-center">
+            <button className="text-3xl text-[#FFF4B7]" onClick={() => {/* Toggle menu */}}>
+              &#9776; {/* Hamburger icon */}
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Menu (Hidden by default) */}
+      <div className="lg:hidden hidden">
+        <div className="flex flex-col items-center gap-6 bg-[#000B58] text-[#FFF4B7] py-4">
+          <Link href="/" className="text-xl">Home</Link>
+          <Link href="/#guidelines" className="text-xl">Register</Link>
+          <Link href="/#working" className="text-xl">About Rotary</Link>
+          <Link href="/#faq" className="text-xl">Our Team</Link>
+          <Link href="/#faq" className="text-xl">Sponsors</Link>
+        </div>
       </div>
-      
-      
-    </nav>
-    
-   
     </div>
-    
-  )
+  );
 }
 
-export default Nav
+export default Nav;
