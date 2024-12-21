@@ -2,7 +2,8 @@ import Nav from "@/components/landing/nav";
 import Register from "@/components/landing/register";
 import Footer from "@/components/landing/footer";
 import Perks from "@/components/landing/perks";
-
+import About from "@/components/landing/aboutfod";
+import Carousel from "@/components/landing/carousel";
 export default function Page() {
   return (
     <div className="bg-[#FFF4B7]">
@@ -17,7 +18,10 @@ export default function Page() {
         {/* Content */}
         <div className="relative">
           <Register />
+          <About />
+          <Carousel />
           <Perks />
+         
           <Footer />
         </div>
       </div>
