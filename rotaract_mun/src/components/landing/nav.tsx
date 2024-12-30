@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 const Nav = () => {
   return (
     <div>
-      <nav className='flex justify-between px-6 bg-[#000B58]'>
+      <nav className='flex justify-between px-6 bg-[#16423C]'>
         <div>
           <Image
             src="/og_logo.png"
@@ -17,7 +17,7 @@ const Nav = () => {
           />
         </div>
 
-        <div className='flex gap-10 font-serif text-xl font-medium text-[#FFF4B7] items-center mr-16'>
+        <div className='flex gap-10 font-serif text-xl font-medium text-[#C4DAD2] items-center mr-16'>
           <Link href="/" className="hidden lg:block">Home</Link>
           <Link href="/#guidelines" className="hidden lg:block">Register</Link>
           <Link href="/#working" className="hidden lg:block">About Rotary</Link>

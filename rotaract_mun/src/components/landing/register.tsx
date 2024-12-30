@@ -8,7 +8,7 @@ const Register = () => {
     <>
       <div className="w-full h-full">
         <div className="text-center">
-          <p className="text-6xl font-thin pt-20 text-[#003161] font-serif">
+          <p className="text-6xl font-thin pt-28 text-[#003161] font-serif">
             Rotary Club of Bengal Presidency
             <br />
             <span className="text-3xl">

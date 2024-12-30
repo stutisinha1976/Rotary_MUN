@@ -4,9 +4,11 @@ import Footer from "@/components/landing/footer";
 import Perks from "@/components/landing/perks";
 import About from "@/components/landing/aboutfod";
 import Carousel from "@/components/landing/carousel";
+import President from "@/components/landing/president";
+import Convener from "@/components/landing/convener";
 export default function Page() {
   return (
-    <div className="bg-[#FFF4B7]">
+    <div className="bg-[##E3FEF7]">
       <div className="sticky top-0 z-50">
       <Nav />
       </div>
@@ -20,8 +22,11 @@ export default function Page() {
           <Register />
           <About />
           <Carousel />
+          <div className="flex justify-center">
           <Perks />
-         
+          </div>
+          <President/>
+          <Convener/>
           <Footer />
         </div>
       </div>

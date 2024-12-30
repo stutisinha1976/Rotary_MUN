@@ -1,45 +1,41 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Perks = () => {
   return (
-    <div>
-      <div className='mt-52 px-8 flex justify-center text-5xl text-[#003161] font-thin font-serif'>
-        Perks of being a part of <i><span className='text-[#006A67]'>&nbsp; Forum of Diplomacy MUN</span></i>
+    <section id='perks'>
+    <div className="mt-20 px-4 md:px-12">
+      <div className="text-center text-3xl md:text-5xl text-[#003161] font-thin font-serif">
+        Perks of being a part of <i><span className="text-[#006A67]">&nbsp;Forum of Diplomacy MUN</span></i>
       </div>
-      <div className='mt-6 ml-12 flex flex-col lg:flex-row px-8 justify-between gap-14'>
+      <div className="mt-6 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8 justify-center">
         
-        <div className='lg:w-1/2'>
-          <ul className='text-2xl text-[#000B58] font-serif  list-disc space-y-2 rounded-xl   p-4'>
-            <div className='ml-3 space-y-2'>
-              <li> Engage in realistic simulations of UN committees, addressing global issues. </li>
-              <li> Participate in global discussions and debates. </li>
-              <li> Connect with delegates from diverse backgrounds. </li>
-              <li> Develop research, public speaking and negotiation skills. </li>
-              <li> The Forum of Diplomacy MUN is beginner-friendly, creating a comfortable platform for first-time delegates. </li>
-              <li> Certificates shall be awarded to each and every participant to honour their passion and interest. </li>
-              
-              <li> Participants will have the opportunity to volunteer/partake in varying internships. </li>
-              <li> Social media recognition will be provided for winners. </li>
-              <li> Merit holders will be honoured by cash prizes. </li>
-            </div>
+        {/* Left Section (Perks List) */}
+        <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+          <ul className="text-lg md:text-2xl text-[#000B58] font-serif list-disc space-y-3 p-4">
+            <li>Engage in realistic simulations of UN committees, addressing global issues.</li>
+            <li>Connect with delegates from diverse backgrounds while enhancing research, public speaking, and negotiation skills.</li>
+            <li>Beginner-friendly platform with certificates for all participants and cash prizes for merit holders.</li>
+            <li>Opportunities for internships and social media recognition for winners.</li>
           </ul>
         </div>
 
-        <div className='lg:w-1/2 flex justify-center'>
+        {/* Right Section (Image) */}
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
           <Image
             src="/perks.png"
             alt="Perks Image"
-            width={600}
-            height={0} // The height is automatically adjusted for responsive layout
+            width={400}
+            height={400}
+            className="object-contain rounded-lg"
           />
         </div>
         
       </div>
     </div>
-  )
-}
+    </section>
+  );
+};
 
 export default Perks;
