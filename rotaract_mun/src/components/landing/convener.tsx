@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 const Convener = () => {
   return (
+    <section id='convenor'>
     <div className="mt-28 px-4">
       <div className="text-center text-3xl md:text-5xl text-[#003161] font-thin font-serif">
         Message from our <i><span className="text-[#006A67]">Convenor</span></i>
@@ -41,6 +42,7 @@ Convenor, Forum of Diplomacy.
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

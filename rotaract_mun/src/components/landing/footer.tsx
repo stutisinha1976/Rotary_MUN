@@ -18,11 +18,12 @@ const Footer = () => {
           <div className='flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-10 text-[#C4DAD2]'>
             <section className='flex flex-col items-center lg:items-start'>
               <Link href="/" className='text-xl mb-2'>Home</Link>
-              <Link href="/" className='text-xl mb-2'>About Us</Link>
-              <Link href="/" className='text-xl mb-2'>Guidelines</Link>
-              <Link href="/" className='text-xl mb-2'>Work Progress</Link>
-              <Link href="/" className='text-xl mb-2'>FAQ</Link>
-              <Link href="/" className='text-xl mb-2'>Login/Register</Link>
+              <Link href="/#register" className='text-xl mb-2'>Register</Link>
+              <Link href="/#about" className='text-xl mb-2'>About FoD</Link>
+              <Link href="/#committee" className='text-xl mb-2'>Committees</Link>
+              <Link href="/#perks" className='text-xl mb-2'>Perks</Link>
+              <Link href="/#president" className='text-xl mb-2'>Message from President</Link>
+              <Link href="/#convenor" className='text-xl mb-2'>Message from Convenor</Link>
             </section>
 
             <section className='flex  items-center lg:items-start gap-3 mt-4 lg:mt-0'>

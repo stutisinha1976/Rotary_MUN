@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 const President = () => {
   return (
+    <section id='president'>
     <div className="mt-28 px-4">
       <div className="text-center text-3xl md:text-5xl text-[#003161] font-thin font-serif">
         Message from our <i><span className="text-[#006A67]">President</span></i>
@@ -38,6 +39,7 @@ const President = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
