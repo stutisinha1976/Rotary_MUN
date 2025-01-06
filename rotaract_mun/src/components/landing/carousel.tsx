@@ -11,22 +11,22 @@ const Carousel = () => {
         {
             title: "Lok Sabha",
             description: "Loksabha seeks to simulate the proceedings of the lower house of the Indian Parliament. Delegates are to keep true to the allotted portfolios, form alliances and deliberate on pressing issues prevalent in India.",
-            image: "/loksabha.png",
+            image: "/LokSabha.jpg",
         },
         {
             title: "United Nations General Assembly: Disarmament and International Security Committee",
             description: "DISEC or the Disarmament and International Security Committee is the first committee of the United Nations General Assembly. Delegates are to address issues related to International Security, Disarmament and Global peace keeping.",
-            image: "unga.png",
+            image: "UNGA.jpg",
         },
         {
             title: "International Press",
             description: "International Press serves as the eyes and the ears of the conference. The journalists and the photographers are quintessential to faithful documentation of the proceedings of each committee. ",
-            image: "ip.png",
+            image: "ip.jpg",
         },
         {
             title: "United Nations Human Rights Council",
             description: "The United Nations Human Rights Council seeks to discuss the essential topic of human rights. Delegates are to negotiate on matters involving fundamental rights and take precautions against violations on the mandate.",
-            image: "unhcr.png",
+            image: "unhcr.jpg",
         },
     ];
 
