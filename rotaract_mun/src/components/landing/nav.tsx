@@ -20,7 +20,7 @@ const Nav = () => {
         <div className='flex gap-10 font-serif text-xl font-medium text-[#C4DAD2] items-center mr-16'>
           <Link href="/" className="hidden lg:block">Home</Link>
           <Link href="/#guidelines" className="hidden lg:block">Register</Link>
-          <Link href="/#working" className="hidden lg:block">About Rotary</Link>
+          <Link href="/rotary" className="hidden lg:block">About Rotary</Link>
           <Link href="/#faq" className="hidden lg:block">Our Team</Link>
           <Link href="/#faq" className="hidden lg:block">Sponsors</Link>
 

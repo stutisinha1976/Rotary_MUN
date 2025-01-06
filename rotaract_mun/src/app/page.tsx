@@ -8,7 +8,7 @@ import President from "@/components/landing/president";
 import Convener from "@/components/landing/convener";
 export default function Page() {
   return (
-    <div className="bg-[##E3FEF7]">
+    <div className="bg-[#E3FEF7]">
       <div className="sticky top-0 z-50">
       <Nav />
       </div>
@@ -22,7 +22,7 @@ export default function Page() {
           <Register />
           <About />
           <Carousel />
-          <div className="flex justify-center">
+          <div className="">
           <Perks />
           </div>
           <President/>
